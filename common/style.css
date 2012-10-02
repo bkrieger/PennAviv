@@ -1,0 +1,208 @@
+/*----------------------------Overall-----------------------------------------*/
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align:center;
+	font-size:small;
+	line-height: 18px;
+	color: #333333;
+	background-color: #ffffff;
+}
+#website {
+	width:1000px;
+	padding:20px 0px;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+}
+a {
+  color: #0088cc;
+  text-decoration: none;
+}
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+p {
+  margin: 0 0 9px;
+}
+.bold {
+    font-weight:bold;
+}
+/*----------------------------Header-----------------------------------------*/
+#header_background {
+	background-color: #222222;
+	position:absolute;
+	left:0;
+	right:0;
+	height:125px;
+	z-index:-1;
+}
+#head {
+    background-color: #222222;
+	padding-top:20px;
+	padding-left:50px;
+	padding-bottom:10px;
+	margin-top:-20px;
+}
+#head img {
+	height:90px;
+}
+#menu {
+	margin-left:650px;
+	margin-top:-50px;
+	margin-bottom:70px;
+}
+#menu .arrow {
+	font-size:8px;
+}
+#nav{
+	list-style:none;
+	font-weight:bold;
+	float:left; /* Clear floats */
+}
+#nav li{
+	float:left;
+	margin-right:3px;
+	position:relative;
+}
+#nav a{
+	display:block;
+	padding:5px;
+	color:#fff;
+	background:#444444;
+	text-decoration:none;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+#nav a:hover{
+	color:#fff;
+	background:#0c366a;
+	text-decoration:none;
+}
+#nav ul{
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+#nav ul li{
+	background-color:black;
+	padding-top:2px;
+	float:none;
+}
+#nav ul a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+#nav li:hover ul{ /* Display the dropdown on hover */
+	left:-40px; /* Bring back on-screen when needed */
+}
+#nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	background:#0c366a;
+	text-decoration:none;
+}
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	background:#444444;
+}
+/*----------------------------All Content-----------------------------------------*/
+#content {
+	min-height:650px;
+	overflow:hidden;
+	background-color:#D6DCE8;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	padding:15px;
+}
+#content p {
+    font-size:medium;
+    line-height:2em;
+}
+#content h3 {
+	margin-left:150px;
+    margin-top:10px;
+    margin-bottom:20px;
+    font-size:2em;
+}
+/*----------------------------"Index" Specific-----------------------------------------*/
+#follow {
+	margin-top:50px;
+	margin-left:50px;
+}
+#follow img {
+	height:100px;
+	margin-right:25px;
+}
+/*----------------------------"Calendar" Specific-----------------------------------------*/
+#calendar iframe {
+	margin-top:10px;
+	margin-left:30px;
+	margin-bottom:20px;
+	width:900px;
+	height:600px;
+	border:0;
+}
+/*----------------------------"Events" Specific-----------------------------------------*/
+#events .description {
+	margin-left:100px;
+	margin-bottom:50px;
+}
+/*----------------------------"Board" Specific-----------------------------------------*/
+#board .person 
+{
+    margin-left:40px;
+}
+#board .words 
+{
+    float:left;
+}
+#board .name 
+{
+    font-size:x-large;
+    margin:40px 0 0 0;
+}
+#board .title 
+{
+    font-size:large;
+    margin:10px 0 0 30px;
+}
+#board .info 
+{
+    font-size:small;
+    line-height:1.5em;
+    margin:10px 0 0 30px;
+    width:450px;
+}
+#board img 
+{
+    float:left;
+    margin-top:30px;
+    margin-left:50px;
+    max-height:300px;
+    max-width:400px;
+}
+/*----------------------------Footer-----------------------------------------*/
+#foot {
+	margin-top:10px;
+}
+#foot p {
+	display:inline;
+	margin:40px;
+	font-weight:bold;
+}
+
+#social_networks {
+	float:right;
+	margin-top:-20px;
+	margin-bottom:20px;
+	margin-right:50px;
+}
+
+#foot img {
+	height:40px;
+	margin-left:5px;
+}

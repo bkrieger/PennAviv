@@ -1,0 +1,1 @@
+This is the source code for everything at pennaviv.com. The site is mostly static, but uses MySQL and PHP to manage content. For example, events on the page can be updated simply by adding a new event to the appropriate MySQL table.
